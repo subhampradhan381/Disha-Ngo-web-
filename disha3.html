@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Your Website</title>
+  <style>
+    * {
+      color: white;
+      font-family: 'Josefin Sans';
+    }
+
+    body {
+      background-color: rgb(76, 91, 115);
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .container1 {
+      width: 99vw;
+      height: 40vw;
+      background-color: black;
+
+    }
+
+    a {
+
+      position: relative;
+      align-items: center;
+
+      padding-left: 4vw;
+    }
+
+
+    #nav {
+      height: 8vw;
+      width: 99vw;
+      background-color: rgb(197, 67, 67);
+      display: flex;
+    }
+    #nav .nav-element{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    a {
+
+      margin-right: 1vw;
+    }
+
+    #image img {
+      position: relative;
+      top: 0.5vw;
+      left: 1vw;
+      width: 8vw;
+      height: 7vw;
+      display: inline;
+      border-radius: 50%;
+    }
+    
+    #a1 {
+      color: white;
+      text-decoration: none;
+      position: relative;
+      top: 0.5vw;
+      left: 3vw;
+      /* width: 15vw;
+      height: 8vw; */
+      display: inline;
+    }
+
+    #a2 {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      top: 0.5vw;
+      left: 6vw;
+      /* width: 15vw;
+      height: 8vw; */
+      display: inline;
+    }
+
+    #a3 {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      top: 0.5vw;
+      left: 10vw;
+      /* width: 15vw;
+      height: 8vw; */
+      border-radius: 0%;
+      display: inline;
+
+    }
+
+    #a4 {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      top: 0.5vw;
+      left: 14vw;
+      /* width: 15vw; */
+      border-radius: 0%;
+      /* height: 8vw; */
+      display: inline;
+
+    }
+    #a1:hover{
+      color:rgb(0, 11, 128);
+    }
+    #a2:hover{
+      color:rgb(0, 11, 128);
+    }
+    #a3:hover{
+      color:rgb(0, 11, 128);
+    }
+    #a4:hover{
+      color:rgb(0, 11, 128);
+    }
+
+    .contain {
+      display: flex;
+    }
+
+    .item {
+
+      font-size: xx-large;
+      margin-top: -32vw;
+      margin-left: 7vw;
+      padding-top: 5vw;
+      width: 30vw;
+      height: 30vw;
+      align-items: justify;
+      color: white;
+      display: inline-block;
+    }
+
+    .item p {
+      animation-delay: 0.5s;
+    }
+
+    .image2 {
+      margin-left: 18vw;
+      width: 30vw;
+      height: 30vw;
+      padding-top: 2vw;
+      margin-top: -25vw;
+
+    }
+
+    .image2 img {
+      margin-left: 4vw;
+      width: 35vw;
+      height: 35vw;
+      background-size: cover;
+      animation-delay: 1s;
+    }
+
+    .carousel-inner img {
+      height: 90vh;
+      width: 100%;
+    }
+
+    #slider-container {
+      margin-top: 3vw;
+      position: relative;
+      height: 70vw;
+      width: 99vw;
+      overflow: hidden;
+    }
+
+    #slider {
+      margin: 6vw 0vw 6vw 0vw;
+      padding: 0;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide img {
+      margin: 0%;
+      padding: 0%;
+      width: 99vw;
+      height: 64vw;
+      flex: 0 0 auto;
+
+    }
+    .img-fluid{
+         height: 400px;
+         width:90%;
+    }
+     #about{
+      height:auto;
+     }
+    #prev,
+    #next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      cursor: pointer;
+      color: black
+    }
+
+    #prev {
+      left: 10px;
+    }
+
+    #next {
+      right: 10px;
+    }
+
+    #text {
+      font-size: 20px;
+    }
+
+    .display-4 {
+      color: aqua;
+    }
+
+    .team {
+      text-align: center;
+    }
+
+    .pdf {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      width: 96vw;
+    }
+
+    .pdf2 {
+      margin-top: 4vw;
+      margin-left: 4.5vw;
+      margin-bottom: 4vw;
+      box-shadow: -1px 0 5px #000000;
+      padding-top: 1vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      display: inline-block;
+    }
+
+    .pdf h1 {
+      text-align: center;
+    }
+    .magazine{
+      width: 250px;
+      height: 350px;
+    }
+    .download-btn {
+      margin-left: 50px;
+  display: inline-block;
+  margin-top:4px;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #2980b9;
+}
+
+    u h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #teamblock .image-container {
+      position: relative;
+      margin: 0 auto 20px;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 275px;
+      height: 275px;
+    }
+
+    #teamblock .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      transition: transform 0.3s ease-out;
+    }
+
+    #teamblock .image-container:hover img {
+      transform: scale(1.2);
+    }
+
+    .anim {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: moveup 0.5s linear forwards;
+    }
+    .anim h1{
+      font-size: 1.5rem;
+    }
+    @keyframes moveup {
+      100% {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+
+    @media (max-width:450px) {
+      .pdf2 {
+        width: 100%;
+        height: 357px;
+        position: relative;
+        margin-top: 4vw;   
+        margin-bottom: 4vw;
+        box-shadow: -1px 0 5px #000000;
+        padding-top: 1vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        display: inline-block;
+      }
+      .magazine{
+      width: 100%;
+      height: 350px;
+    }
+   #nav{
+    height: 10vw;
+    width: 99vw;
+    display: flex;
+   }
+
+      .item {
+        padding-left: 4vw;
+        font-size: x-small;
+      }
+      #image img {
+        width: 9vw;
+        height: 9vw;
+      }
+
+      a {
+        
+        margin-right: 0vw;
+        padding-left: 0vw;
+        font-size: xx-small;
+      }
+      #a1{
+        top: 1.5vw;
+      }
+      #a2 {
+        top: 1.5vw;
+      }
+      #a3 {
+        top: 1.5vw;
+      }
+      #a4{
+        top: 1.5vw;
+      }
+     .name{
+      margin-top: -4vw;
+      text-align: center;
+
+     }
+     .download-btn {
+      margin-left: 72px;
+     }
+    }
+    .name{
+      margin-bottom: 1VW;
+      margin-top: 1vw;
+      text-align: center;
+      text-transform:uppercase;
+     }
+
+     @media (max-width:600px){
+      #nav .nav-element{
+        height: 10vw;
+        display: none;
+        flex-direction: column;
+        width: 80%;
+        background-color:  rgb(197, 67, 67);
+        height: fit-content;
+        z-index: 100;
+        border-radius: 0px 0px 5px 5px;
+      }
+      #a1,#a2,#a3,#a4{
+        left: 0;
+        /* margin-bottom: 7px; */
+        padding: 3px;
+      }
+      #a1{
+        margin-top:28px;
+      }
+      #nav #openbtn{
+        display: block;
+      }
+      
+     }
+
+     #openbtn{
+      display: none;
+      position: absolute;
+      top: 4px; 
+      left: 86%;
+      color: white;
+      font-size: 24px;
+      z-index: 200;
+     }
+     .structure {
+    width: 65vw;
+    height: 50vh;
+    margin: auto;
+}
+
+.line {
+    width: 79%;
+    height: 1px;
+    border-top: 5px solid black;
+    margin: auto;
+}
+
+.structureDivision {
+    width: 85%;
+    height: 60px;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrowImage {
+    width: 60px;
+    height: 60px;
+}
+
+.arrowImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(90deg);
+}
+
+.zoneSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.zone {
+  box-shadow: -1px 0 10px #000000;
+    width: 200px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 230, 0);
+   
+}
+
+.zone .zoneName {
+font-weight: bold;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .structure {
+        display: flex;
+        width: 70%;
+    }
+
+    .line {
+        height: 85%;
+        width: 1px;
+        border-top: 0;
+        border-left: 5px solid black;
+    }
+
+    .structureDivision {
+        flex-direction: column;
+        height: 97%;
+        width: 80px;
+    }
+
+    .arrowImage img {
+        transform: rotate(0deg);
+    }
+
+    .zoneSection {
+        flex-direction: column;
+    }
+}
+  </style>
+  <script>
+    const openNav=()=>{
+      const navElement=document.getElementById('nav-element');
+      const openbtn=document.getElementById('openbtn');
+      if( navElement.style.display=='none'){
+
+        navElement.style.display='flex';
+        // openbtn.style.display='block';
+        openbtn.innerHTML='X'
+      }
+      else{
+        navElement.style.display='none';
+        openbtn.innerHTML='&#9776;'
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="container1">
+    <div id="nav">
+      <a id="image"><img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\logo.jpg"></a>
+      <div class="nav-element" id="nav-element">
+
+        <a id="a1" href="#home">VISION & MISSION</a>
+        <a id="a2" href="#MAGAZINES">MAGAZINES</a>
+        <a id="a3" href="#ACTIVITIES">ACTIVITIES</a>
+        <a id="a4" href="#volunteerContainer">VOLUNTEERS</a>
+      </div>
+      <div id="openbtn" onclick="openNav()">&#9776;</div>
+    </div>
+  </div>
+  <div class="contain">
+    <div class="item">
+      <h1 class="anim">VISION</h1>
+      <P class="anim">
+        A step to develop the team to be the feture manager.
+      </P>
+    </div>   
+    <div class="image2">
+      <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo9.jpg"class="anim">
+    </div>
+
+  </div>
+
+
+  <div id="slider-container">
+    <div id="slider">
+      <div class="slide"><img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\d1.jpg" alt="Image 1"></div>
+      <div class="slide"><img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\d2.jpg" alt="Image 2"></div>
+      <div class="slide"><img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\d3.jpg" alt="Image 3"></div>
+      <div class="slide"><img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\d4.jpg" alt="Image 1"></div>
+    </div>
+    <button id="prev" onclick="prevSlide()">❮</button>
+    <button id="next" onclick="nextSlide()">❯</button>
+  </div>
+  <section class="my-5" id="home">
+    <div class="py-5">
+      <h2 class="text-center">About Us</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="fade-up">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo8.jpg"id="about" class="img-fluid aboutimg">
+        </div>
+        <div class="col-lg-8 col-md-8 col-12  " data-aos="fade-down">
+          <h2 class="display-4">Team Disha</h2>
+          <p class="py-5" id="text">Team Disha is a dedicated group of individuals committed to making a positive impact
+            on the lives of the less fortunate,
+            especially those who are visually impaired. Their mission revolves around extending a helping hand to the
+            poor,
+            particularly focusing on the needs of blind individuals. The team is driven by a profound sense of
+            compassion and a desire to bring about
+            positive change in the community through selfless service, or "sewa."</p><br>
+            <div class="structure">
+              <div class="line"></div>
+              <div class="structureDivision">
+                  <div class="arrowImage">
+                      <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\arrow-39526_1920.png" alt="">
+                  </div>
+                  <div class="arrowImage">
+                    <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\arrow-39526_1920.png" alt="">
+                </div>
+                <div class="arrowImage">
+                  <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\arrow-39526_1920.png" alt="">
+              </div>
+              <div class="arrowImage">
+                <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\arrow-39526_1920.png" alt="">
+            </div>
+              </div>
+              <div class="zoneSection">
+                  <div class="zone">
+                      <h3 class="zoneName">PUBLISHING ZONE</h3>
+                  </div>
+                  <div class="zone">
+                      <h3 class="zoneName">ACTIVITY ZONE</h3>
+                  </div>
+                  <div class="zone">
+                      <h3 class="zoneName">CHARITY ZONE</h3>
+                  </div>
+                  <div class="zone">
+                      <h3 class="zoneName">PROMOTIONAL ZONE</h3>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-1">
+    <div class="py-1">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-12 " data-aos="fade-down">
+          <h2 class="display-4">Mission</h2>
+          <p class="py-5" id="text">The mission of team Disha is to build the student nature to the real world for the
+            facing of different situation
+            and arrange several activities to develop a student attitude for the team worker and gaining the experience
+            with
+            valuable knowledge regarding the team influencers leader.</p>
+        </div>  
+        <div class="col-lg-3 col-md-3 col-12" data-aos="fade-up">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\SUBRAJOITY SIR.jpg" class="img-fluid aboutimg">
+          <div class="team"><b>ZONAL HEAD<BR>MR.SUBHRAJYOTI BEHERA</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-3">
+    <div class="py-3">
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-12 " data-aos="fade-up">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\NIBEDITA MAM.jpg" class="img-fluid aboutimg">
+          <div class="team"><b>ASSISTANT ZONAL HEAD<BR>MS. NIBEDITA PATRA</b></div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-12 " data-aos="fade-down">
+         
+         <h2 class="display-4">Vision</h2>
+        <p class="py-5" id="text">The ultimate goal is to provide a range of group activity which can embracing the
+          future leader for empowering
+          society with the managerial knowledge & explore for the betterment of bussiness & organisational effeteness
+          with a positional valueness.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <div id="MAGAZINES" class="col-12 pdf">
+    <h1>Our Magazins</h1>
+    <div class=" pdf2"> <iframe src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\magazines\Published by  Management Students (1).pdf"  class="magazine"></iframe>
+      <div align="center">MAGAZIN 1</div>
+      
+    </div>
+    <div class=" pdf2"> <iframe src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\magazines\Disha (Episode 2) .pdf" class="magazine"></iframe>
+      <div align="center">MAGAZIN 2</div>
+      
+          
+    </div>
+    <div class=" pdf2"> <iframe src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\magazines\The children of today will make the India of tomorrow..pdf"  class="magazine"></iframe>
+      <div align="center">MAGAZIN 3</div>
+      
+    </div>
+    <div class=" pdf2"> <iframe src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\magazines\Disha Episode-4.pdf"  class="magazine"></iframe>
+      <div align="center">MAGAZIN 4</div>
+      
+    </div>
+  </div>
+
+  <section class="my-5" id="ACTIVITIES">
+    <div class="py-5">
+      <h2 class="text-center">Our Gallery</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo1.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo2.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo3.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo4.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo5.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo6.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo7.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo10.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo11.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo12.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo13.jpg" class="img-fluid pb-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 " data-aos="zoom-in">
+          <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\photo14.jpg" class="img-fluid pb-4">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-5" id="volunteerContainer">
+    <div class="py-5">
+      <h2 class="text-center">Our Volunteers</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img2.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+          sibuprasad nayak
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img1.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            pragyaparamita sahU
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img3.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            poonam priyadarshini panda
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img4.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            Alok kumar Sahoo
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img5.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            Tusar raman naik
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img6.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            Chuman sahoo
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img7.jpg" alt="Image 1">
+          
+          </div>
+          <div  class = "name">
+            khusi bilas
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img8.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+           monalisha Pradhan
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img9.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            PRITIMAYEE BISWAL
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img10.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            NIBEDITA DEHURY
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img11.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            Rahul kumar sahu
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img12.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            Titan ku Prusty
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img13.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+           Abhishek Sahu
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img14.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+           Chidatmika Pradhan
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img15.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+            prajolita dehury
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img16.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+           PRADYUDA SAHOO
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-12 " id="teamblock">
+          <div class="image-container" id="imageblock">
+            <img src="C:\Users\USER\OneDrive\Documents\Desktop\DISHA\DISHA IMG\img17.jpg" alt="Image 1">
+          </div>
+          <div  class = "name">
+           M.ANATA LAXMI 
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    function showSlide(index) {
+      const slider = document.getElementById('slider');
+      const slideWidth = document.querySelector('.slide').offsetWidth;
+      const newPosition = -index * slideWidth;
+      slider.style.transform = 'translateX(' + newPosition + 'px)';
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 3000);
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1500,
+    });
+  </script>
+  <script>
+    function downloadPdf(pdfUrl, pdfName) {
+      var link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = pdfName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+
+</html>
